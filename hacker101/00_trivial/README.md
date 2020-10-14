@@ -23,13 +23,13 @@ Full installation instructions can be found on the Portswigger (burpsuite) page.
 
 With Burp started and intercept turned off, navigate to the [challenge page](https://ctf.hacker101.com/ctf/launch/1)
 
-![disable intercept](/screenshots/00_disable_intercept.png)
+![disable intercept](00_disable_intercept.png)
 
 
 
 Your burp tree should populate with all sorts of URLs. 
 
-![site map](/screenshots/01_target_tree.png)
+![site map](01_target_tree.png)
 
 
 
@@ -37,13 +37,13 @@ Since we are only interested in the page we are working on, we will add it to ou
 
 This puts it into our in scope items but we dont want to be bothered by the rest of the URLs so click the filter bar just about the list and select `show only in scope items`.
 
-![filter list](/screenshots/02_in_scope_filter.png)
+![filter list](02_in_scope_filter.png)
 
 
 
 This should remove all other URLs and show only the domain/ip address we are working with.
 
-![filtered results](/screenshots/03_filtered_results.png)
+![filtered results](03_filtered_results.png)
 
 
 Expand the tree and take a look at the files present on the server. It seems to be extremely simple and serve up almost nothing. In fact, only a single file is there standing out: `background.png`
@@ -52,7 +52,7 @@ Considering the page we are looking at has only a white background, this seems o
 
 Keen eyes are going to notice immediately that we can see the flag in the HTTP response.
 
-![png response](/screenshots/04_background_image_response.png)
+![png response](04_background_image_response.png)
 
 
 No more work is needed, this challenge is solved. Copy the `^FLAG^...` from the reponse box and submit it on the Hacker101 page. 
