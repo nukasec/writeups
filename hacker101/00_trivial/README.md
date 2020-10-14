@@ -1,12 +1,9 @@
 ### Trivial
 Host: Hacker101
 
-
 Description: A little something to get you started
 
-
 Type: Web
-
 
 Difficulty: Easy
 
@@ -45,6 +42,7 @@ This should remove all other URLs and show only the domain/ip address we are wor
 
 ![filtered results](03_filtered_results.png)
 
+#### Exploitation
 
 Expand the tree and take a look at the files present on the server. It seems to be extremely simple and serve up almost nothing. In fact, only a single file is there standing out: `background.png`
 
